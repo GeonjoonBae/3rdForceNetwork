@@ -1,0 +1,6 @@
+Source,Target,Type,Id,Label,timeset,Weight,year,place,MMNT-EdgeType
+《光明报》,《群众》,Undirected,20453,journal-journal,,12,,,journal<--->journal
+《观察》,《群众》,Undirected,20454,journal-journal,,1,,,journal<--->journal
+《观察》,《展望》,Undirected,20455,journal-journal,,10,,,journal<--->journal
+《观察》,《中建:综合版》,Undirected,20456,journal-journal,,3,,,journal<--->journal
+《展望》,《中建:综合版》,Undirected,20457,journal-journal,,57,,,journal<--->journal

@@ -1,0 +1,11 @@
+Id,Label,timeset,type,type2,color,indegree,outdegree,Degree,weighted indegree,weighted outdegree,Weighted Degree,eigencentrality,Eccentricity,closnesscentrality,harmonicclosnesscentrality,betweenesscentrality
+《周报(上海1945)》,《周报(上海1945)》,,journal,journal,"#00EB00",188,0,9,346,0,637,1,1,1,1,1.383333
+《国讯》,《国讯》,,journal,journal,"#00EB00",93,0,7,193,0,268,0.822549,2,0.818182,0.888889,0.366667
+《中央周刊》,《中央周刊》,,journal(n),journal,"#0000FF",191,0,7,344,0,22,0.822549,2,0.818182,0.888889,0.366667
+《民主周刊(昆明)》,《民主周刊(昆明)》,,journal,journal,"#00EB00",134,0,9,250,0,160,1,1,1,1,1.383333
+《时代杂志》,《时代杂志》,,journal(c),journal,"#FF0000",141,0,7,263,0,123,0.822549,2,0.818182,0.888889,0.366667
+《民主(重庆)》,《民主(重庆)》,,journal,journal,"#00EB00",98,0,9,148,0,341,1,1,1,1,1.383333
+《民主(上海)》,《民主(上海)》,,journal,journal,"#00EB00",105,0,6,197,0,427,0.728449,2,0.75,0.833333,0
+《再生》,《再生》,,journal,journal,"#00EB00",45,0,6,65,0,132,0.728449,2,0.75,0.833333,0
+《文萃》,《文萃》,,journal(c),journal,"#FF0000",129,0,9,178,0,420,1,1,1,1,1.383333
+《中华论坛》,《中华论坛》,,journal,journal,"#00EB00",38,0,7,59,0,94,0.822549,2,0.818182,0.888889,0.366667

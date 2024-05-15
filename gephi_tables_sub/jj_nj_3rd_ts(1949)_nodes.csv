@@ -1,0 +1,8 @@
+Id,Label,type,indegree,outdegree,Degree,Weighted Degree,eigencentrality,Eccentricity,closnesscentrality,harmonicclosnesscentrality,betweenesscentrality
+《再生》,《再生》,journal,76,0,6,170,1,1,1,1,0.2
+《观察》,《观察》,journal,149,0,6,342,1,1,1,1,0.2
+《中建》,《中建》,journal,16,0,5,25,0.870752,2,0.857143,0.916667,0
+《光明报》,《光明报》,journal,229,0,6,760,1,1,1,1,0.2
+《主流》,《主流》,journal,35,0,6,124,1,1,1,1,0.2
+《展望》,《展望》,journal,410,0,6,1127,1,1,1,1,0.2
+《中建:综合版》,《中建:综合版》,journal,150,0,5,1086,0.870752,2,0.857143,0.916667,0

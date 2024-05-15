@@ -1,0 +1,4 @@
+Source,Target,Type,Id,Label,timeset,Weight,year,place,MMNT-EdgeType
+《观察》,《展望》,Undirected,5299,journal-journal,,10,,,journal<--->journal
+《观察》,《中建:综合版》,Undirected,5300,journal-journal,,3,,,journal<--->journal
+《展望》,《中建:综合版》,Undirected,5301,journal-journal,,57,,,journal<--->journal

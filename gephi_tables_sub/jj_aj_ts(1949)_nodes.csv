@@ -1,0 +1,10 @@
+Id,Label,timeset,type,type2,color,indegree,outdegree,Degree,weighted indegree,weighted outdegree,Weighted Degree,eigencentrality,Eccentricity,closnesscentrality,harmonicclosnesscentrality,betweenesscentrality
+《时代杂志》,《时代杂志》,,journal(c),journal,"#FF0000",142,0,0,234,0,0,0,0,0,0,0
+《再生》,《再生》,,journal,journal,"#00EB00",13,0,0,31,0,0,0,0,0,0,0
+《中建》,《中建》,,journal,journal,"#00EB00",8,0,0,8,0,0,0,0,0,0,0
+《光明报》,《光明报》,,journal,journal,"#00EB00",62,0,1,91,0,12,0.270189,3,0.444444,0.541667,0
+《观察》,《观察》,,journal,journal,"#00EB00",37,0,3,47,0,14,1,2,0.8,0.875,4
+《群众》,《群众》,,journal(c),journal,"#FF0000",132,0,2,229,0,13,0.581578,2,0.666667,0.75,3
+《主流》,《主流》,,journal,journal,"#00EB00",9,0,0,9,0,0,0,0,0,0,0
+《展望》,《展望》,,journal,journal,"#00EB00",97,0,2,200,0,67,0.816142,3,0.571429,0.708333,0
+《中建:综合版》,《中建:综合版》,,journal,journal,"#00EB00",39,0,2,56,0,60,0.816142,3,0.571429,0.708333,0
