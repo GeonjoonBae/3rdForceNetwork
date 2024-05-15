@@ -368,33 +368,33 @@ write.csv(aj_3rd_ts, file = 'csv_for_gephi/aj_3rd_ts.csv', row.names = FALSE)
 # 중복 제거하여 각각 고유한 값들로 정리
 unique_s_aj_ts <- unique(aj_ts$source)
 
-# lable 데이터프레임 생성
-lable_value_aj_ts <- gsub("\\(1945\\)$", "", unique_s_aj_ts)
-lable_value_aj_ts <- gsub("\\(1946\\)$", "", lable_value_aj_ts)
-lable_value_aj_ts <- gsub("\\(1947\\)$", "", lable_value_aj_ts)
-lable_value_aj_ts <- gsub("\\(1948\\)$", "", lable_value_aj_ts)
-lable_value_aj_ts <- gsub("\\(1949\\)$", "", lable_value_aj_ts)
+# label 데이터프레임 생성
+label_value_aj_ts <- gsub("\\(1945\\)$", "", unique_s_aj_ts)
+label_value_aj_ts <- gsub("\\(1946\\)$", "", label_value_aj_ts)
+label_value_aj_ts <- gsub("\\(1947\\)$", "", label_value_aj_ts)
+label_value_aj_ts <- gsub("\\(1948\\)$", "", label_value_aj_ts)
+label_value_aj_ts <- gsub("\\(1949\\)$", "", label_value_aj_ts)
 
-aj_ts_lable <- data.frame(Id = c(unique_s_aj_ts),
-                          Label = c(lable_value_aj_ts))
-write.csv(aj_ts_lable, 'csv_for_gephi/aj_ts_lable.csv', row.names = FALSE)
-## aj_ts.csv를 gephi에서 실행한 후 aj_ts_lable을 import spreadsheet로 적용
+label_aj_ts <- data.frame(Id = c(unique_s_aj_ts),
+                          Label = c(label_value_aj_ts))
+write.csv(label_aj_ts, 'csv_for_gephi/label_aj_ts.csv', row.names = FALSE)
+## aj_ts.csv를 gephi에서 실행한 후 label_aj_ts을 import spreadsheet로 적용
 
       # 3-2-2-2. aj_3rd_ts ####
 # 중복 제거하여 각각 고유한 값들로 정리
 unique_s_aj_3rd_ts <- unique(aj_3rd_ts$source)
 
-# lable 데이터프레임 생성
-lable_value_aj_3rd_ts <- gsub("\\(1945\\)$", "", unique_s_aj_3rd_ts)
-lable_value_aj_3rd_ts <- gsub("\\(1946\\)$", "", lable_value_aj_3rd_ts)
-lable_value_aj_3rd_ts <- gsub("\\(1947\\)$", "", lable_value_aj_3rd_ts)
-lable_value_aj_3rd_ts <- gsub("\\(1948\\)$", "", lable_value_aj_3rd_ts)
-lable_value_aj_3rd_ts <- gsub("\\(1949\\)$", "", lable_value_aj_3rd_ts)
+# label 데이터프레임 생성
+label_value_aj_3rd_ts <- gsub("\\(1945\\)$", "", unique_s_aj_3rd_ts)
+label_value_aj_3rd_ts <- gsub("\\(1946\\)$", "", label_value_aj_3rd_ts)
+label_value_aj_3rd_ts <- gsub("\\(1947\\)$", "", label_value_aj_3rd_ts)
+label_value_aj_3rd_ts <- gsub("\\(1948\\)$", "", label_value_aj_3rd_ts)
+label_value_aj_3rd_ts <- gsub("\\(1949\\)$", "", label_value_aj_3rd_ts)
 
-aj_3rd_ts_lable <- data.frame(Id = c(unique_s_aj_3rd_ts),
-                              Label = c(lable_value_aj_3rd_ts))
-write.csv(aj_3rd_ts_lable, 'csv_for_gephi/aj_3rd_ts_lable.csv', row.names = FALSE)
-## aj_3rd_ts.csv를 gephi에서 실행한 후 aj_3rd_ts_lable을 import spreadsheet로 적용
+label_aj_3rd_ts <- data.frame(Id = c(unique_s_aj_3rd_ts),
+                              Label = c(label_value_aj_3rd_ts))
+write.csv(label_aj_3rd_ts, 'csv_for_gephi/label_aj_3rd_ts.csv', row.names = FALSE)
+## aj_3rd_ts.csv를 gephi에서 실행한 후 label_aj_3rd_ts을 import spreadsheet로 적용
 
 ################################################################################
 # 4. 저자-개념 네트워크 분석 ####
@@ -515,14 +515,14 @@ an_type1 <- data.frame(Id = c(unique_s),
                        type = rep("author", length(unique_s)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
-lable_value <- gsub(" \\(n\\)$", "", unique_t)
+label_value <- gsub(" \\(n\\)$", "", unique_t)
 an_type2 <- data.frame(Id = c(unique_t),
-                       Label = c(lable_value),
+                       Label = c(label_value),
                        type = rep("notion", length(unique_t)))
 
-an_type <- rbind(an_type1,an_type2)
-write.csv(an_type, 'csv_for_gephi/an_type.csv', row.names = FALSE)
-## an.csv를 gephi에서 실행한 후 an_type을 import spreadsheet로 적용
+type_an <- rbind(an_type1,an_type2)
+write.csv(type_an, 'csv_for_gephi/type_an.csv', row.names = FALSE)
+## an.csv를 gephi에서 실행한 후 type_an을 import spreadsheet로 적용
 
       # 4-4-2-2. an_3rd 데이터(국공 불포함) ####
 # 중복 제거하여 각각 고유한 값들로 정리
@@ -535,13 +535,13 @@ an_3rd_type1 <- data.frame(Id = c(unique_s_3rd),
                            type = rep("author", length(unique_s_3rd)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
-lable_value_3rd <- gsub(" \\(n\\)$", "", unique_t_3rd)
+label_value_3rd <- gsub(" \\(n\\)$", "", unique_t_3rd)
 an_3rd_type2 <- data.frame(Id = c(unique_t_3rd),
-                           Label = c(lable_value_3rd),
+                           Label = c(label_value_3rd),
                            type = rep("notion", length(unique_t_3rd)))
 
-an_3rd_type <- rbind(an_3rd_type1,an_3rd_type2)
-write.csv(an_3rd_type, 'csv_for_gephi/an_3rd_type.csv', row.names = FALSE)
+type_an_3rd <- rbind(an_3rd_type1,an_3rd_type2)
+write.csv(type_an_3rd, 'csv_for_gephi/type_an_3rd.csv', row.names = FALSE)
 
 
   # 4-5. 시계열(time serial) 분석을 위한 데이터 ####
@@ -570,54 +570,54 @@ write.csv(an_3rd_ts, file = 'csv_for_gephi/an_3rd_ts.csv', row.names = FALSE)
 unique_s_an_ts <- unique(an_ts$source)
 unique_t_an_ts <- unique(an_ts$target)
 
-# lable 데이터프레임 생성
+# label 데이터프레임 생성
 s_value_an_ts <- gsub("\\(1945\\)$", "", unique_s_an_ts)
 s_value_an_ts <- gsub("\\(1946\\)$", "", s_value_an_ts)
 s_value_an_ts <- gsub("\\(1947\\)$", "", s_value_an_ts)
 s_value_an_ts <- gsub("\\(1948\\)$", "", s_value_an_ts)
 s_value_an_ts <- gsub("\\(1949\\)$", "", s_value_an_ts)
 
-an_ts_a_lable <- data.frame(Id = c(unique_s_an_ts),
+an_ts_a_label <- data.frame(Id = c(unique_s_an_ts),
                             Label = c(s_value_an_ts),
                             type = rep("author", length(unique_s_an_ts)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
 t_value_an_ts <- gsub(" \\(n\\)$", "", unique_t_an_ts)
 
-an_ts_n_lable <- data.frame(Id = c(unique_t_an_ts),
+an_ts_n_label <- data.frame(Id = c(unique_t_an_ts),
                             Label = c(t_value_an_ts),
                             type = rep("notion", length(unique_t_an_ts)))
 
-an_ts_lable <- rbind(an_ts_a_lable, an_ts_n_lable)
-write.csv(an_ts_lable, 'csv_for_gephi/an_ts_lable.csv', row.names = FALSE)
-## an_ts.csv를 gephi에서 실행한 후 an_ts_lable을 import spreadsheet로 적용
+label_an_ts <- rbind(an_ts_a_label, an_ts_n_label)
+write.csv(label_an_ts, 'csv_for_gephi/label_an_ts.csv', row.names = FALSE)
+## an_ts.csv를 gephi에서 실행한 후 label_an_ts을 import spreadsheet로 적용
 
       # 4-5-2-2. an_3rd_ts ####
 # 중복 제거하여 각각 고유한 값들로 정리
 unique_s_an_3rd_ts <- unique(an_3rd_ts$source)
 unique_t_an_3rd_ts <- unique(an_3rd_ts$target)
 
-# lable 데이터프레임 생성
+# label 데이터프레임 생성
 s_value_an_3rd_ts <- gsub("\\(1945\\)$", "", unique_s_an_3rd_ts)
 s_value_an_3rd_ts <- gsub("\\(1946\\)$", "", s_value_an_3rd_ts)
 s_value_an_3rd_ts <- gsub("\\(1947\\)$", "", s_value_an_3rd_ts)
 s_value_an_3rd_ts <- gsub("\\(1948\\)$", "", s_value_an_3rd_ts)
 s_value_an_3rd_ts <- gsub("\\(1949\\)$", "", s_value_an_3rd_ts)
 
-an_3rd_ts_a_lable <- data.frame(Id = c(unique_s_an_3rd_ts),
+an_3rd_ts_a_label <- data.frame(Id = c(unique_s_an_3rd_ts),
                                 Label = c(s_value_an_3rd_ts),
                                 type = rep("author", length(unique_s_an_3rd_ts)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
 t_value_an_3rd_ts <- gsub(" \\(n\\)$", "", unique_t_an_3rd_ts)
-an_3rd_ts_t_lable <- data.frame(Id = c(unique_t_an_3rd_ts),
+an_3rd_ts_t_label <- data.frame(Id = c(unique_t_an_3rd_ts),
                                 Label = c(t_value_an_3rd_ts),
                                 type = rep("notion", length(unique_t_an_3rd_ts)))
 
-an_3rd_ts_lable <- rbind(an_3rd_ts_a_lable, an_3rd_ts_t_lable)
+label_an_3rd_ts <- rbind(an_3rd_ts_a_label, an_3rd_ts_t_label)
 
-write.csv(an_3rd_ts_lable, 'csv_for_gephi/an_3rd_ts_lable.csv', row.names = FALSE)
-## an_3rd_ts.csv를 gephi에서 실행한 후 an_3rd_ts_lable을 import spreadsheet로 적용
+write.csv(label_an_3rd_ts, 'csv_for_gephi/label_an_3rd_ts.csv', row.names = FALSE)
+## an_3rd_ts.csv를 gephi에서 실행한 후 label_an_3rd_ts을 import spreadsheet로 적용
 
 ################################################################################
 # 5. 개념-잡지 네트워크 분석 ####
@@ -745,48 +745,48 @@ write.csv(nj_3rd_ts, file = 'csv_for_gephi/nj_3rd_ts.csv', row.names = FALSE)
 unique_s_nj_ts <- unique(nj_ts$source)
 unique_t_nj_ts <- unique(nj_ts$target)
 
-# lable 데이터프레임 생성
+# label 데이터프레임 생성
 s_value_nj_ts <- gsub("\\(1945\\)$", "", unique_s_nj_ts)
 s_value_nj_ts <- gsub("\\(1946\\)$", "", s_value_nj_ts)
 s_value_nj_ts <- gsub("\\(1947\\)$", "", s_value_nj_ts)
 s_value_nj_ts <- gsub("\\(1948\\)$", "", s_value_nj_ts)
 s_value_nj_ts <- gsub("\\(1949\\)$", "", s_value_nj_ts)
 
-nj_ts_n_lable <- data.frame(Id = c(unique_s_nj_ts),
+nj_ts_n_label <- data.frame(Id = c(unique_s_nj_ts),
                             Label = c(s_value_nj_ts),
                             type = rep("notion", length(unique_s_nj_ts)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
-nj_ts_j_lable <- data.frame(Id = c(unique_t_nj_ts),
+nj_ts_j_label <- data.frame(Id = c(unique_t_nj_ts),
                             Label = c(unique_t_nj_ts),
                             type = rep("journal", length(unique_t_nj_ts)))
 
-nj_ts_lable <- rbind(nj_ts_n_lable, nj_ts_j_lable)
-write.csv(nj_ts_lable, 'csv_for_gephi/nj_ts_lable.csv', row.names = FALSE)
-## nj_ts.csv를 gephi에서 실행한 후 nj_ts_lable을 import spreadsheet로 적용
+label_nj_ts <- rbind(nj_ts_n_label, nj_ts_j_label)
+write.csv(label_nj_ts, 'csv_for_gephi/label_nj_ts.csv', row.names = FALSE)
+## nj_ts.csv를 gephi에서 실행한 후 label_nj_ts을 import spreadsheet로 적용
 
       # 5-4-2-2. nj_3rd_ts ####
 # 중복 제거하여 각각 고유한 값들로 정리
 unique_s_nj_3rd_ts <- unique(nj_3rd_ts$source)
 unique_t_nj_3rd_ts <- unique(nj_3rd_ts$target)
 
-# lable 데이터프레임 생성
+# label 데이터프레임 생성
 s_value_nj_3rd_ts <- gsub("\\(1945\\)$", "", unique_s_nj_3rd_ts)
 s_value_nj_3rd_ts <- gsub("\\(1946\\)$", "", s_value_nj_3rd_ts)
 s_value_nj_3rd_ts <- gsub("\\(1947\\)$", "", s_value_nj_3rd_ts)
 s_value_nj_3rd_ts <- gsub("\\(1948\\)$", "", s_value_nj_3rd_ts)
 s_value_nj_3rd_ts <- gsub("\\(1949\\)$", "", s_value_nj_3rd_ts)
 
-nj_3rd_ts_n_lable <- data.frame(Id = c(unique_s_nj_3rd_ts),
+nj_3rd_ts_n_label <- data.frame(Id = c(unique_s_nj_3rd_ts),
                                 Label = c(s_value_nj_3rd_ts),
                                 type = rep("notion", length(unique_s_nj_3rd_ts)))
 
 # 앞서 target 값에 붙여놨던 "(n)"이 gephi에서 시각화할 때 보이지 않도록 Label 값 부여
-nj_3rd_ts_j_lable <- data.frame(Id = c(unique_t_nj_3rd_ts),
+nj_3rd_ts_j_label <- data.frame(Id = c(unique_t_nj_3rd_ts),
                                 Label = c(unique_t_nj_3rd_ts),
                                 type = rep("journal", length(unique_t_nj_3rd_ts)))
 
-nj_3rd_ts_lable <- rbind(nj_3rd_ts_n_lable, nj_3rd_ts_j_lable)
-write.csv(nj_3rd_ts_lable, 'csv_for_gephi/nj_3rd_ts_lable.csv', row.names = FALSE)
-## nj_3rd_ts.csv를 gephi에서 실행한 후 nj_3rd_ts_lable을 import spreadsheet로 적용
+label_nj_3rd_ts <- rbind(nj_3rd_ts_n_label, nj_3rd_ts_j_label)
+write.csv(label_nj_3rd_ts, 'csv_for_gephi/label_nj_3rd_ts.csv', row.names = FALSE)
+## nj_3rd_ts.csv를 gephi에서 실행한 후 label_nj_3rd_ts을 import spreadsheet로 적용
 
