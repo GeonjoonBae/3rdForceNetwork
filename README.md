@@ -118,3 +118,21 @@ Keywords : Late 1940s, Third Force, Chinese Civil War, Social Network Analysis(S
 - aa_aj_3rd_edges.csv  
 - nn_nj_3rd_edges.csv  
 - nn_nj_3rd(degree2up)_edges.csv
+
+</br>
+
+## 통계 분석 설명
+
+### Gephi 통계 분석 개요
+
+&nbsp;&nbsp;Gephi의 통계 분석은 Gephi 실행 시 처음 나타나는 Overview의 왼쪽 탭 중 Statistics에서 시행할 수 있다. Average Degree(평균 연결 정도)는 각 노드에 연결된 노드 수의 평균값으로, Run을 클릭하면 이 값과 함께 Data Laboratory에서 확인할 수 있는 노드별 Degree(연결 정도) 값을 생성한다. Avg Weighted Degree(평균 가중치 연결 정도)는 각 노드와 연결된 에지의 가중치를 합산하여 평균 낸 값이다. Network Diameter(네트워크 최단 거리)는 네트워크 안에서 서로 가장 멀리 떨어진 노드를 잇는 최단 거리(최소 에지 개수)를 계산하며, 이를 통해 Betweenness Centrality(매개 중심성), Closeness Centrality(근접 중심성) 등의 지표를 얻을 수 있다. Eigenvector Centrality(고유 벡터 중심성)는 단순히 한 노드가 얼마나 많은 노드에 연결되었는지 뿐 아니라, 연결된 상대 노드가 전체 네트워크 안에서 얼마나 중요한 노드인지까지 고려한 종합 중심성 수치이다. 각각의 주요 중심성에 대한 설명은 윤종훈, ｢07-1. 사회네트워크 분석이란?｣, ｢사회네트워크 분석과 Gephi – 기초｣, 김바로, 전가람, 이효림 외 4명, 󰡔인문 데이터 분석 – 디지털인문학 시리즈󰡕(https://wikidocs.net/192599, 최종 편집: 2024년 3월 19일 20:02)를 참조.[148쪽의 각주 19) 일부 수정]
+
+
+### 방향성 설정
+
+&nbsp;&nbsp;Gephi에서는 데이터를 Gephi에 탑재할 때와 방향성이 있는 네트워크에 대해 중심성 계산을 시행할 때 방향성 유무(directed/undirected)를 선택할 수 있다. 본 연구에서는 저자가 잡지에 글을 기고하는 행위 외에 별도의 관계 유형을 고려하지 않기 때문에, 연결의 방향성을 고려할 필요는 없다고 판단하여 기본 네트워크 성격을 undirected로 설정해 분석을 진행한다.[148쪽의 각주 20) 일부 수정]
+
+
+### 2-mode 네트워크의 1-mode 네트워크 전환
+
+
