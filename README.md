@@ -110,8 +110,7 @@ Keywords : Late 1940s, Third Force, Chinese Civil War, Social Network Analysis(S
 
 ### g) gephi_tables: Gephi 통계 분석 결과물  
 
-&nbsp;&nbsp;3단계 전처리 결과물을 Gephi에 탑재하면 Gephi의 통계 분석 기능을 활용해 중심성 등을 계산할 수 있다. 본 폴더에는 논문 작성에 직접적으로 관계된 데이터만을 포함하고, 연구 과정에서 생성되었으나 논문에 직접적으로 관련되지 않은 데이터는 별도 폴더(gephi_tables_sub)로 업로드한다.</br>
-&nbsp;&nbsp;Gephi의 통계 분석은 Gephi를 실행했을 때 처음 나타나는 Overview 창의 왼쪽 탭 중 Statistics에서 시행할 수 있다. Average Degree(평균 연결 정도)는 각 노드가 몇 개의 노드와 연결되어 있는지를 계산해 평균 낸 값으로, Run을 클릭하면 Average Degree 값과 함께 Data Laboratory에서 확인할 수 있는 각 노드의 Degree(연결 정도) 값을 생성한다. Avg Weighted Degree(평균 가중치 연결 정도)는 각 노드와 연결된 에지의 가중치 합을 계산하고 이를 평균 낸 값이다. Network Diameter(네트워크 최단거리)는네트워크 안에서 서로 가장 멀리 떨어져 있는 노드를 잇는 최단 거리(최소 에지 개수)를 계산하며, 이를 통해 Betweenness Centrality(매개 중심성), Closeness Centrality (근접 중심성) 등의 중심성 지표를 얻을 수 있다. Eigenvector Centrality(고유 벡터 중심성)는 단순히 얼마나 많은 노드에 연결되었는지 뿐 아니라, 연결된 노드가 네트워크 안에서 얼마나 중요한 노드인지까지 고려해 계산하는 종합 중심성 수치를 계산 한다. 각각의 주요 중심성에 대한 설명은 윤종훈, ｢07-1. 사회네트워크 분석이란?｣, ｢사회네트워크 분석과 Gephi－기초｣, 김바로, 전가람, 이효림 외 4명, 『인문 데이터 분석－디지털인문학 시리즈』(<https://wikidocs.net/192599>, 최종 편집: 2024년 3월 19일 20:02)를 참조.[149쪽]
+&nbsp;&nbsp;3단계 전처리 결과물을 Gephi에 탑재하면 Gephi의 통계 분석 기능을 활용해 중심성 등을 계산할 수 있다. 본 폴더는 논문 작성에 직접적으로 관계된 분석 결과만을 포함하고, 연구 과정에서 생성되었으나 논문에 직접적으로 관련되지 않은 데이터는 별도 폴더(gephi_tables_sub)로 업로드한다.
 
 
 ### h) gephi_tables_sub: 통계 분석 결과물(논문 외)  
