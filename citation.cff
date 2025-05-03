@@ -8,3 +8,11 @@ title: "Code and Data for Social Network Analysis on Third Force Journalism and 
 version: 1.0.0
 date-released: 2025-05-03
 url: "https://github.com/GeonjoonBae/3rdForceNetwork"
+preferred-citation:
+  type: dataset
+  authors:
+  - family-names: "Bae"
+    given-names: "Geonjoon"
+  title: "Code and Data for Social Network Analysis on Third Force Journalism and their Political Status in Late 1940s China"
+  version: 1.0.0
+  year: 2025
