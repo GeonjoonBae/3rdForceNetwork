@@ -1,18 +1,19 @@
-cff-version: 1.0.0
-message: "이 저장소의 코드나 데이터를 활용하는 경우, 아래와 같이 인용해주시기 바랍니다." "If you use any code or data, please cite it as follow."
-authors:
-- family-names: "Bae"
-  given-names: "Geonjoon"
-  affiliation: "Sogang University"
+cff-version: 1.2.0
+message: "If you use any code or data from this repository, please cite it as follows. 이 저장소의 코드나 데이터를 활용하는 경우, 아래와 같이 인용해주시기 바랍니다."
 title: "Code and Data for Social Network Analysis on Third Force Journalism and their Political Status in Late 1940s China"
 version: 1.0.0
 date-released: 2025-05-03
 url: "https://github.com/GeonjoonBae/3rdForceNetwork"
-preferred-citation:
-  type: dataset
-  authors:
+authors:
   - family-names: "Bae"
     given-names: "Geonjoon"
+    affiliation: "Sogang University"
+
+preferred-citation:
+  type: dataset
   title: "Code and Data for Social Network Analysis on Third Force Journalism and their Political Status in Late 1940s China"
   version: 1.0.0
-  year: 2025
+  date-released: 2025-05-03
+  authors:
+    - family-names: "Bae"
+      given-names: "Geonjoon"
