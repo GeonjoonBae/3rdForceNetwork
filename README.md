@@ -1,4 +1,19 @@
-## 사회 네트워크 분석을 통해 본 1940년대 후반 중국 언론 지형과 제3세력 </br> - 중국근현대사 디지털역사학 연구 시론 -  
+## Code and Data for Social Network Analysis on Third Force Journalism and their Political Status in Late 1940s China (Version 1.1) [Data set]
+
+<details> <summary><h3>데이터 인용 예시</h3></summary>
+Bae, Geonjoon. “Code and Data for Social Network Analysis on Third Force Journalism and Their Political Status in Late 1940s China (Version 1.1).”[Data set] GitHub, Last Modified May 3, 2025. https://github.com/GeonjoonBae/3rdForceNetwork.</br>
+</br>
+Bae, G., 2025. “Code and data for social network analysis on Third Force journalism and their political status in late 1940s China”[Data set], version 1.1. GitHub. Available at: https://github.com/GeonjoonBae/3rdForceNetwork [Accessed 4 May 2025(방문 일자)].</br>
+</br>
+Bae, G. (2025). Code and Data for Social Network Analysis on Third Force Journalism and their Political Status in Late 1940s China (Version 1.1.) [Data set]. https://github.com/GeonjoonBae/3rdForceNetwork</br>
+</br>
+배건준, “Code and Data for Social Network Analysis on Third Force Journalism and Their Political Status in Late 1940s China(Version 1.1),” GitHub, https://github.com/GeonjoonBae/3rdForceNetwork (검색일: 2025년 5월 4일) 
+
+</details>
+
+
+## 논문 제목 
+### 사회 네트워크 분석을 통해 본 1940년대 후반 중국 언론 지형과 제3세력 </br> - 중국근현대사 디지털역사학 연구 시론 -  
 ### Third Force Journalism and their Political Status in Late 1940s China: </br> Utilizing Social Network Analysis in Modern Chinese History
 
 </br>
