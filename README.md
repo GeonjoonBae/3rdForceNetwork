@@ -162,38 +162,20 @@ Keywords : Late 1940s, Third Force, Chinese Civil War, Social Network Analysis(S
 
 &nbsp;&nbsp;Multimode Networks Transformation Plugin은 Gephi 0.10.1에서 기본 제공하는 플러그인으로, 두 속성으로 이루어진 그래프를 한 속성만 가진 그래프로 변환하는 데 사용한다. 변환 과정에서는 서로 다른 속성의 노드를 연결하는 에지 가중치에 대한 행렬 곱셈을 통해 새로운 가중치를 가진 엣지를 생성한다.  
 
-&nbsp;&nbsp;예를 들어 세 명의 저자와 두 종의 잡지로 이루어진 저자–잡지 네트워크를 저자 네트워크로 변환할 경우, </br>
-주어진 데이터를 3×2 행렬값으로 삼아,
+&nbsp;&nbsp;예를 들어 세 명의 저자와 두 종의 잡지로 이루어진 저자–잡지 네트워크를 저자 네트워크로 변환할 경우, 주어진 데이터를 3×2 행렬값으로 삼아, </br>
 ![image](https://github.com/user-attachments/assets/8a85189d-676f-4341-9160-d17440b58cf8)
- 그 전치행렬
+와 그 전치행렬
 ![image](https://github.com/user-attachments/assets/67ab5b46-78f2-4e92-8f38-88c549a52c65)
-과 행렬 곱셈을 실행한다.
+의 행렬 곱셈을 시행한다.
 
 
 ![image](https://github.com/user-attachments/assets/0554d095-7eec-4daa-9aa5-086185720bd1)
 
 이때 대각선의 값(6561, 36, 533)은 저자 자신의 가중치가 이중 계산된 값으로, 새로운 에지 생성에는 반영되지 않는다. 유의미한 값은 a12=a21=0, a13=a31=162, a23=a32=138 뿐이며, 이 중에서 값이 0인 항은 두 저자 간에 에지가 생성되지 않는다. 결과적으로 '張君勱–張東蓀'(Weight: 162), '張東蓀–施復亮'(Weight: 138)의 두 에지가 생성된다.
 
-
 ![image](https://github.com/user-attachments/assets/4cfe832b-01df-4093-bc8f-745b7da9119f)
 
-&nbsp;&nbsp;이 같은 변환을 위해 상단 바의 도구-플러그인 탭에서 플러그인을 설치하면 Overview
-또는 Data Laboratory 창 오른쪽에서 Multimode Networks Projection 창을 확인할 수
-있다. 창에서 Load Attribute를 클릭해 해당 그래프가 가진 속성을 불러온 후 Attribute
-Type에서 기준으로 삼을 속성을 선택하면 아래 Left matrix에 두 개의 하위 속성으로
-만들 수 있는 행렬이 선택지로 표시된다. 이 행렬 중에 변환의 목표가 되는 속성이
-앞에 적혀 있고 매개가 될 속성이 뒤에 적힌 행렬을 선택하고, Right matrix에서는 반
-대로 매개 속성이 앞, 목표 속성이 뒤에 적힌 행렬을 선택한 후 Run을 클릭해 실행한
-다. 예를 들어 ‘type’이라는 속성에 대해 각 노드가 ‘author’ 또는 ‘journal’라는 속성값
-을 가진 경우, Left matrix에서 ‘author-journal’, Right matrix에서 ‘journal-author’를 선
-택하여 실행하면, 속성값이 ‘author’인 노드 간에 위와 같은 계산을 통해 도출된 가중
-치를 가진 에지가 생성된다. 반대로 Left matrix에서 ‘journal-author’, Right matrix에서
-‘author- journal’를 선택해 실행하면, 속성값이 ‘journal’인 노드 간에 새로운 에지가
-생성된다. 변환에 걸리는 시간은 새로 생성되는 에지의 수에 비례하는데, 목표 속성
-을 가진 노드가 많을수록 생성해야 할 에지도 많아져 소요 시간이 길어진다. 해당 속
-성의 노드가 너무 많아 계산 시간이 길어질 우려가 있으면, Threshold 값을 조정해 가중치가 낮은 에지를 계산에서 제외해 시간을 단축할 수 있다. 해당 플러그인에 대
-한 정보는 https://Gephi.org/plugins/#/plugin/multimode (최종 편집: 2023년 1월 9일)
-를 참조.[152-153쪽의 각주 24)]
+&nbsp;&nbsp;이 같은 변환을 위해 상단 바의 도구-플러그인 탭에서 플러그인을 설치하면 Overview 또는 Data Laboratory 창 오른쪽에서 Multimode Networks Projection 창을 확인할 수 있다. 창에서 Load Attribute를 클릭해 해당 그래프가 가진 속성을 불러온 후 Attribute Type에서 기준으로 삼을 속성을 선택하면 아래 Left matrix에 두 개의 하위 속성으로 만들 수 있는 행렬이 선택지로 표시된다. 이 행렬 중에 변환의 목표가 되는 속성이 앞에 적혀 있고 매개가 될 속성이 뒤에 적힌 행렬을 선택하고, Right matrix에서는 반대로 매개 속성이 앞, 목표 속성이 뒤에 적힌 행렬을 선택한 후 Run을 클릭해 실행한다. 예를 들어 ‘type’이라는 속성에 대해 각 노드가 ‘author’ 또는 ‘journal’라는 속성값을 가진 경우, Left matrix에서 ‘author-journal’, Right matrix에서 ‘journal-author’를 선택하여 실행하면, 속성값이 ‘author’인 노드 간에 위와 같은 계산을 통해 도출된 가중치를 가진 에지가 생성된다. 반대로 Left matrix에서 ‘journal-author’, Right matrix에서 ‘author- journal’를 선택해 실행하면, 속성값이 ‘journal’인 노드 간에 새로운 에지가 생성된다. 변환에 걸리는 시간은 새로 생성되는 에지의 수에 비례하는데, 목표 속성을 가진 노드가 많을수록 생성해야 할 에지도 많아져 소요 시간이 길어진다. 해당 속성의 노드가 너무 많아 계산 시간이 길어질 우려가 있으면, Threshold 값을 조정해 가중치가 낮은 에지를 계산에서 제외해 시간을 단축할 수 있다. 해당 플러그인에 대한 정보는 https://Gephi.org/plugins/#/plugin/multimode (최종 편집: 2023년 1월 9일)를 참조.[152-153쪽의 각주 24)]
 
 
 ### 필터 적용 
