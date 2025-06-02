@@ -11,6 +11,14 @@ Bae, G. (2025). Code and Data for Social Network Analysis on Third Force Journal
 
 </details>
 
+## README 목차 ##
+[논문 제목](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EC%A0%9C%EB%AA%A9)</br>
+[논문 서지사항 및 링크](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EC%84%9C%EC%A7%80%EC%82%AC%ED%95%AD-%EB%B0%8F-%EB%A7%81%ED%81%AC)</br>
+[논문 목차](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EB%AA%A9%EC%B0%A8)</br>
+[논문 개요](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EA%B0%9C%EC%9A%94)</br>
+[코드 소개](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EC%BD%94%EB%93%9C-%EC%86%8C%EA%B0%9C)</br>
+[자료 소개](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EC%9E%90%EB%A3%8C-%EC%86%8C%EA%B0%9C)</br>
+[통계 분석 설명](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%ED%86%B5%EA%B3%84-%EB%B6%84%EC%84%9D-%EC%84%A4%EB%AA%85)</br></br>
 
 ## 논문 제목 
 ### 사회 네트워크 분석을 통해 본 1940년대 후반 중국 언론 지형과 제3세력 </br> - 중국근현대사 디지털역사학 연구 시론 -  
@@ -60,13 +68,13 @@ Keywords : Late 1940s, Third Force, Chinese Civil War, Social Network Analysis(S
 
 ## 코드 소개
 
-### 3rdnetrawdata.ipynb: 1단계 전처리 코드(python)
+### 3rdnetrawdata.ipynb: 1단계 전처리 코드 (python)
 全國報刊索引에서 50개 단위로 다운로드한 목차 파일을 하나로 합치는 python 코드 및 Sublime Text를 이용한 자료 정리 방법에 대한 설명을 포함하는 jupiter notebook
 
-### 3rdForceNetwork.R: 2단계 및 3단계 전처리 코드(R)
+### 3rdForceNetwork.R: 2단계 및 3단계 전처리 코드 (R)
 2단계에서는 모든 잡지의 데이터를 하나의 통합 데이터로 결합하고, 기계 조작 시 발생할 수 있는 오류를 최소화하기 위해 문자열을 처리한다. 3단계에서는 통합 데이터를 활용해 네트워크 분석용 데이터를 만든다. 
 
-### 3rdForceNetwork(analysis).R: 데이터 분석(또는 그것을 위한 전처리)을 위한 코드
+### 3rdForceNetwork(analysis).R: 데이터 분석(또는 그것을 위한 전처리)을 위한 코드 (R)
 논문에서 이미 다룬 내용을 포함해, 1940년대 중국 제3세력 언론 데이터셋에 대한 초보적인 데이터 분석(또는 그것을 위한 전처리)을 위한 코드를 담고 있으며, 새로운 분석 코드를 작성할 때마다 업데이트 예정
 
 </br>
@@ -82,7 +90,7 @@ Keywords : Late 1940s, Third Force, Chinese Civil War, Social Network Analysis(S
 
   * 제3세력 잡지: </br> gc-觀察, gmb-光明報, gx-國訊, mzbp-民主周刊(北平), mzcq-民主(重慶), mzgl-民主:桂林版, mzkm-民主周刊(昆明), mzsh-民主(上海), syw-時与文, xdwz-現代文摘(上海), xl-新路周刊, zb-周報(上海1945), zhlt-中華論壇, zj-中建, zjbp-中建:北平版, zjhbhk-中建:華北航空版, zjzh-中建:綜合版, zl-主流, zs-再生, zw-展望
 
-  * 국공양당 잡지: </br> zyzk-中央周刊 / jf-解放, qz-群眾, sdzz-時代雜誌, wc-文萃, zbcom-正報
+  * 국공양당 잡지: </br> zyzk-中央周刊 / jf-解放, qz-羣眾, sdzz-時代雜誌, wc-文萃, zbcom-正報
 
 
 ### b) csv_journal: 1단계 전처리 결과물
