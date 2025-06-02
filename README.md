@@ -12,13 +12,13 @@ Bae, G. (2025). Code and Data for Social Network Analysis on Third Force Journal
 </details>
 
 ## README 목차 ##
-[논문 제목](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EC%A0%9C%EB%AA%A9)</br>
-[논문 서지사항 및 링크](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EC%84%9C%EC%A7%80%EC%82%AC%ED%95%AD-%EB%B0%8F-%EB%A7%81%ED%81%AC)</br>
-[논문 목차](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EB%AA%A9%EC%B0%A8)</br>
-[논문 개요](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EB%85%BC%EB%AC%B8-%EA%B0%9C%EC%9A%94)</br>
-[코드 소개](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EC%BD%94%EB%93%9C-%EC%86%8C%EA%B0%9C)</br>
-[자료 소개](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%EC%9E%90%EB%A3%8C-%EC%86%8C%EA%B0%9C)</br>
-[통계 분석 설명](https://github.com/GeonjoonBae/3rdForceNetwork/edit/main/README.md#%ED%86%B5%EA%B3%84-%EB%B6%84%EC%84%9D-%EC%84%A4%EB%AA%85)</br></br>
+[논문 제목](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EB%85%BC%EB%AC%B8-%EC%A0%9C%EB%AA%A9)</br>
+[논문 서지사항 및 링크](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EB%85%BC%EB%AC%B8-%EC%84%9C%EC%A7%80%EC%82%AC%ED%95%AD-%EB%B0%8F-%EB%A7%81%ED%81%AC)</br>
+[논문 목차](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EB%85%BC%EB%AC%B8-%EB%AA%A9%EC%B0%A8)</br>
+[논문 개요](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EB%85%BC%EB%AC%B8-%EA%B0%9C%EC%9A%94)</br>
+[코드 소개](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EC%BD%94%EB%93%9C-%EC%86%8C%EA%B0%9C)</br>
+[자료 소개](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%EC%9E%90%EB%A3%8C-%EC%86%8C%EA%B0%9C)</br>
+[통계 분석 설명](https://github.com/GeonjoonBae/3rdForceNetwork?tab=readme-ov-file#%ED%86%B5%EA%B3%84-%EB%B6%84%EC%84%9D-%EC%84%A4%EB%AA%85)</br></br>
 
 ## 논문 제목 
 ### 사회 네트워크 분석을 통해 본 1940년대 후반 중국 언론 지형과 제3세력 </br> - 중국근현대사 디지털역사학 연구 시론 -  
